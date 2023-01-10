@@ -165,11 +165,7 @@ text-align: left;
 
 .profile img {
     width: 10rem;
-    padding: 0.5rem;
-    
-}
-
-.profile img:hover {
+    padding: 0.5rem;    
 }
 
 .profile {
@@ -180,6 +176,39 @@ text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -10;
+}
+
+.profile__img {
+    position: relative;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 90;
+
+
+}
+
+.overlay:hover {
+    visibility: visible;
+    cursor: ;
+
 }
 
 .profile .btn2 {
@@ -220,25 +249,28 @@ text-align: left;
 
     .hero__content img {
         width: 2.5rem;
-        margin-left: 0.2rem;
+        margin-left: 5.5rem;
         position: absolute;
-        margin-top: 1rem;
+        margin-top: 4.1rem;
        
     }
     
     .hero__content h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 34px;
         font-weight: 850;
-        line-height: 77.97px;
-        text-align: left;
-        text-align: left;
+        line-height: 70px;
+        text-align: center;
+
     
     }
     
     .main {
         display: flex;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10rem;
+        flex-direction: column;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -247,9 +279,9 @@ text-align: left;
     
      .hero__img img {
         height: 400px;
-        width: 500px;
+        width: 400px;
         margin-left: 64px;
-        margin-top: 100px;
+        margin-top: 200px;
 
     }
     
@@ -257,7 +289,8 @@ text-align: left;
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
+    text-align: center;
+    width: 15rem;
     
     }
   }

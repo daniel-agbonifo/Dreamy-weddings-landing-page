@@ -361,6 +361,7 @@ text-align: left;
   }
 
 
+ 
   /*======= Media Queries (Phones) ========*/
   @media screen and (max-width: 600px) {
     .vendors {
@@ -425,6 +426,26 @@ text-align: left;
     line-height: 25px;
     text-align: center;
     width: 15rem;
-    
+    }
+
+    .slide__1,
+    .slide__2 {
+        grid-template-columns: 1fr;
+    }
+
+    .slide__2 {
+        width: 3rem;
+    }
+
+    .portfolio{ 
+        margin-top: 30rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .navlinks ul {
+        display: none;
     }
   }
